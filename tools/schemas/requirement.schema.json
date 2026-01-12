@@ -1,0 +1,25 @@
+{
+  "required": ["id", "title", "status", "level"],
+  "enums": {
+    "level": ["business", "system", "software", "verification"],
+    "status": ["proposed", "approved", "implemented", "verified", "deprecated"]
+  },
+  "link_keys": [
+    "parent",
+    "verifies",
+    "verified_by",
+    "tested_by",
+    "derives",
+    "depends_on",
+    "satisfies",
+    "hazards",
+    "rationale"
+  ],
+  "id_patterns": {
+    "business": "^BR-\\d+$",
+    "system": "^SR-\\d+$",
+    "software": "^TR-\\d+$",
+    "verification": "^TRQ-\\d+$"
+  },
+  "testcase_pattern": "^TC-\\d+$"
+}
